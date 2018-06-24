@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE28D2AA2030D08200840B32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28D2A92030D08200840B32 /* AppDelegate.swift */; };
+		CE28D2AC2030D08200840B32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28D2AB2030D08200840B32 /* ViewController.swift */; };
+		CE28D2AF2030D08200840B32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE28D2AD2030D08200840B32 /* Main.storyboard */; };
+		CE28D2B22030D08200840B32 /* DecentralizedVotingApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE28D2B02030D08200840B32 /* DecentralizedVotingApplication.xcdatamodeld */; };
+		CE28D2B42030D08200840B32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE28D2B32030D08200840B32 /* Assets.xcassets */; };
+		CE28D2B72030D08200840B32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE28D2B52030D08200840B32 /* LaunchScreen.storyboard */; };
+		CE343628203C19230010C122 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE343626203C19230010C122 /* LoginVC.swift */; };
+		CE343629203C19230010C122 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE343627203C19230010C122 /* LoginVC.xib */; };
+		CE39AF7A20592A34007CE5CC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39AF7820592A34007CE5CC /* RegisterViewController.swift */; };
+		CE39AF7B20592A34007CE5CC /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE39AF7920592A34007CE5CC /* RegisterViewController.xib */; };
+		CE49A732207CD15E0070773A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49A730207CD15E0070773A /* HomeViewController.swift */; };
+		CE49A733207CD15E0070773A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE49A731207CD15E0070773A /* HomeViewController.xib */; };
+		CE4FAF39207DB8CC00DFE8EB /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FAF37207DB8CC00DFE8EB /* ClassTableViewCell.swift */; };
+		CE4FAF3A207DB8CC00DFE8EB /* ClassTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4FAF38207DB8CC00DFE8EB /* ClassTableViewCell.xib */; };
+		CE4FAF3E207DBCF800DFE8EB /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FAF3C207DBCF800DFE8EB /* QuestionViewController.swift */; };
+		CE4FAF3F207DBCF800DFE8EB /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4FAF3D207DBCF800DFE8EB /* QuestionViewController.xib */; };
+		CE95575520DA04E1001C7C40 /* QRLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95575320DA04E1001C7C40 /* QRLoginViewController.swift */; };
+		CE95575620DA04E1001C7C40 /* QRLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE95575420DA04E1001C7C40 /* QRLoginViewController.xib */; };
+		CE9DB1ED20A2EFFD00C12040 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9DB1EB20A2EFFD00C12040 /* QRCodeViewController.swift */; };
+		CE9DB1EE20A2EFFD00C12040 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9DB1EC20A2EFFD00C12040 /* QRCodeViewController.xib */; };
+		CEAB78202089C70B007CBFB2 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB781F2089C70B007CBFB2 /* BaseAPI.swift */; };
+		CEAB78222089C9AD007CBFB2 /* APIURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB78212089C9AD007CBFB2 /* APIURL.swift */; };
+		CEB326542030D26C000AE478 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB326532030D26C000AE478 /* Constants.swift */; };
+		CEBFA5E3209B05160003A4E8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBFA5E2209B05160003A4E8 /* Utils.swift */; };
+		CEC48BFE20D4D2E600404469 /* ListQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC48BFC20D4D2E600404469 /* ListQuestionViewController.xib */; };
+		CEC48BFF20D4D2E600404469 /* ListQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC48BFD20D4D2E600404469 /* ListQuestionViewController.swift */; };
+		CEC48C0320D4D31C00404469 /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC48C0120D4D31C00404469 /* QRCodeScannerViewController.swift */; };
+		CEC48C0420D4D31C00404469 /* QRCodeScannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC48C0220D4D31C00404469 /* QRCodeScannerViewController.xib */; };
+		CEC48C0620D4E1D300404469 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC48C0520D4E1D300404469 /* ExtensionUIView.swift */; };
+		CECB684720D2F615009623B3 /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB684520D2F615009623B3 /* StudentListViewController.swift */; };
+		CECB684820D2F615009623B3 /* StudentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECB684620D2F615009623B3 /* StudentListViewController.xib */; };
+		CECCDFF820A981AD00B4B4E7 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECCDFF620A981AD00B4B4E7 /* LessonViewController.swift */; };
+		CECCDFF920A981AD00B4B4E7 /* LessonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECCDFF720A981AD00B4B4E7 /* LessonViewController.xib */; };
+		CECCDFFD20A9830900B4B4E7 /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECCDFFB20A9830900B4B4E7 /* LessonTableViewCell.swift */; };
+		CECCDFFE20A9830900B4B4E7 /* LessonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECCDFFC20A9830900B4B4E7 /* LessonTableViewCell.xib */; };
+		CEEAA0E820A1582800C92F1B /* QuestionResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAA0E620A1582800C92F1B /* QuestionResultViewController.swift */; };
+		CEEAA0E920A1582800C92F1B /* QuestionResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEAA0E720A1582800C92F1B /* QuestionResultViewController.xib */; };
+		D540FE9F1035B5E8683BABAD /* Pods_DecentralizedVotingApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD95B35C914806016CDC68 /* Pods_DecentralizedVotingApplication.framework */; };
+		F140802320DF471C007CED5F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140802220DF471C007CED5F /* User.swift */; };
+		F1AFAF9D20DF581400BB908F /* UserInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AFAF9B20DF581400BB908F /* UserInformationVC.swift */; };
+		F1AFAF9E20DF581400BB908F /* UserInformationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1AFAF9C20DF581400BB908F /* UserInformationVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEE5A3592080B73500236081 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06FD95B35C914806016CDC68 /* Pods_DecentralizedVotingApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DecentralizedVotingApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B549A6E81BBFFE25928F81 /* Pods-DecentralizedVotingApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecentralizedVotingApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-DecentralizedVotingApplication/Pods-DecentralizedVotingApplication.release.xcconfig"; sourceTree = "<group>"; };
+		B621B42B1BF1B9C4C8C3753F /* Pods-DecentralizedVotingApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecentralizedVotingApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DecentralizedVotingApplication/Pods-DecentralizedVotingApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		CE28D2A62030D08200840B32 /* DecentralizedVotingApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecentralizedVotingApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE28D2A92030D08200840B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE28D2AB2030D08200840B32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE28D2AE2030D08200840B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE28D2B12030D08200840B32 /* DecentralizedVotingApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DecentralizedVotingApplication.xcdatamodel; sourceTree = "<group>"; };
+		CE28D2B32030D08200840B32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE28D2B62030D08200840B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE28D2B82030D08200840B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE343626203C19230010C122 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CE343627203C19230010C122 /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		CE39AF7820592A34007CE5CC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CE39AF7920592A34007CE5CC /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		CE49A730207CD15E0070773A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE49A731207CD15E0070773A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CE4FAF37207DB8CC00DFE8EB /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		CE4FAF38207DB8CC00DFE8EB /* ClassTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassTableViewCell.xib; sourceTree = "<group>"; };
+		CE4FAF3C207DBCF800DFE8EB /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		CE4FAF3D207DBCF800DFE8EB /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
+		CE95575320DA04E1001C7C40 /* QRLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRLoginViewController.swift; sourceTree = "<group>"; };
+		CE95575420DA04E1001C7C40 /* QRLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRLoginViewController.xib; sourceTree = "<group>"; };
+		CE9DB1EB20A2EFFD00C12040 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		CE9DB1EC20A2EFFD00C12040 /* QRCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
+		CEAB781F2089C70B007CBFB2 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		CEAB78212089C9AD007CBFB2 /* APIURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURL.swift; sourceTree = "<group>"; };
+		CEB326532030D26C000AE478 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEBFA5E2209B05160003A4E8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CEC48BFC20D4D2E600404469 /* ListQuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListQuestionViewController.xib; sourceTree = "<group>"; };
+		CEC48BFD20D4D2E600404469 /* ListQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListQuestionViewController.swift; sourceTree = "<group>"; };
+		CEC48C0120D4D31C00404469 /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		CEC48C0220D4D31C00404469 /* QRCodeScannerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRCodeScannerViewController.xib; sourceTree = "<group>"; };
+		CEC48C0520D4E1D300404469 /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
+		CECB684520D2F615009623B3 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
+		CECB684620D2F615009623B3 /* StudentListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentListViewController.xib; sourceTree = "<group>"; };
+		CECCDFF620A981AD00B4B4E7 /* LessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
+		CECCDFF720A981AD00B4B4E7 /* LessonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LessonViewController.xib; sourceTree = "<group>"; };
+		CECCDFFB20A9830900B4B4E7 /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
+		CECCDFFC20A9830900B4B4E7 /* LessonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LessonTableViewCell.xib; sourceTree = "<group>"; };
+		CEEAA0E620A1582800C92F1B /* QuestionResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionResultViewController.swift; sourceTree = "<group>"; };
+		CEEAA0E720A1582800C92F1B /* QuestionResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionResultViewController.xib; sourceTree = "<group>"; };
+		F140802220DF471C007CED5F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F1AFAF9B20DF581400BB908F /* UserInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationVC.swift; sourceTree = "<group>"; };
+		F1AFAF9C20DF581400BB908F /* UserInformationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInformationVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE28D2A32030D08200840B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D540FE9F1035B5E8683BABAD /* Pods_DecentralizedVotingApplication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AE347B5E72297FB7420819E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06FD95B35C914806016CDC68 /* Pods_DecentralizedVotingApplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE28D29D2030D08200840B32 = {
+			isa = PBXGroup;
+			children = (
+				CEC48C0520D4E1D300404469 /* ExtensionUIView.swift */,
+				CEBFA5E2209B05160003A4E8 /* Utils.swift */,
+				CEAB781E2089C6B8007CBFB2 /* API */,
+				CE28D2A82030D08200840B32 /* DecentralizedVotingApplication */,
+				CE28D2A72030D08200840B32 /* Products */,
+				D732BDA8214A9F71F5D3763D /* Pods */,
+				0AE347B5E72297FB7420819E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE28D2A72030D08200840B32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE28D2A62030D08200840B32 /* DecentralizedVotingApplication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE28D2A82030D08200840B32 /* DecentralizedVotingApplication */ = {
+			isa = PBXGroup;
+			children = (
+				F1AFAF9A20DF57D500BB908F /* UserInformationVC */,
+				F140802120DF4709007CED5F /* Model */,
+				CE95575220DA04C3001C7C40 /* ScanQRLogin */,
+				CEC48C0020D4D30500404469 /* QRCodeScannerVC */,
+				CEC48BFB20D4D2D300404469 /* ListQuestionVC */,
+				CECB684420D2F5F8009623B3 /* StudentListVC */,
+				CECCDFF520A9819700B4B4E7 /* ListLessonVC */,
+				CE9DB1EA20A2EFEA00C12040 /* QRcodeVC */,
+				CEEAA0E520A157FB00C92F1B /* QuestionResultVC */,
+				CE4FAF3B207DBCDD00DFE8EB /* QuestionAnswerVC */,
+				CE49A72F207CD13B0070773A /* HomeVC */,
+				CE39AF7720592A08007CE5CC /* RegisterVC */,
+				CE343625203C18D40010C122 /* LoginVC */,
+				CE28D2A92030D08200840B32 /* AppDelegate.swift */,
+				CE28D2AB2030D08200840B32 /* ViewController.swift */,
+				CEB326532030D26C000AE478 /* Constants.swift */,
+				CE28D2AD2030D08200840B32 /* Main.storyboard */,
+				CE28D2B32030D08200840B32 /* Assets.xcassets */,
+				CE28D2B52030D08200840B32 /* LaunchScreen.storyboard */,
+				CE28D2B82030D08200840B32 /* Info.plist */,
+				CE28D2B02030D08200840B32 /* DecentralizedVotingApplication.xcdatamodeld */,
+			);
+			path = DecentralizedVotingApplication;
+			sourceTree = "<group>";
+		};
+		CE343625203C18D40010C122 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE343626203C19230010C122 /* LoginVC.swift */,
+				CE343627203C19230010C122 /* LoginVC.xib */,
+			);
+			name = LoginVC;
+			sourceTree = "<group>";
+		};
+		CE39AF7720592A08007CE5CC /* RegisterVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE39AF7820592A34007CE5CC /* RegisterViewController.swift */,
+				CE39AF7920592A34007CE5CC /* RegisterViewController.xib */,
+			);
+			path = RegisterVC;
+			sourceTree = "<group>";
+		};
+		CE49A72F207CD13B0070773A /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE4FAF36207DB8B400DFE8EB /* Cell */,
+				CE49A730207CD15E0070773A /* HomeViewController.swift */,
+				CE49A731207CD15E0070773A /* HomeViewController.xib */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		CE4FAF36207DB8B400DFE8EB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE4FAF37207DB8CC00DFE8EB /* ClassTableViewCell.swift */,
+				CE4FAF38207DB8CC00DFE8EB /* ClassTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CE4FAF3B207DBCDD00DFE8EB /* QuestionAnswerVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE4FAF3C207DBCF800DFE8EB /* QuestionViewController.swift */,
+				CE4FAF3D207DBCF800DFE8EB /* QuestionViewController.xib */,
+			);
+			path = QuestionAnswerVC;
+			sourceTree = "<group>";
+		};
+		CE95575220DA04C3001C7C40 /* ScanQRLogin */ = {
+			isa = PBXGroup;
+			children = (
+				CE95575320DA04E1001C7C40 /* QRLoginViewController.swift */,
+				CE95575420DA04E1001C7C40 /* QRLoginViewController.xib */,
+			);
+			path = ScanQRLogin;
+			sourceTree = "<group>";
+		};
+		CE9DB1EA20A2EFEA00C12040 /* QRcodeVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE9DB1EB20A2EFFD00C12040 /* QRCodeViewController.swift */,
+				CE9DB1EC20A2EFFD00C12040 /* QRCodeViewController.xib */,
+			);
+			path = QRcodeVC;
+			sourceTree = "<group>";
+		};
+		CEAB781E2089C6B8007CBFB2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB78212089C9AD007CBFB2 /* APIURL.swift */,
+				CEAB781F2089C70B007CBFB2 /* BaseAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CEC48BFB20D4D2D300404469 /* ListQuestionVC */ = {
+			isa = PBXGroup;
+			children = (
+				CEC48BFD20D4D2E600404469 /* ListQuestionViewController.swift */,
+				CEC48BFC20D4D2E600404469 /* ListQuestionViewController.xib */,
+			);
+			path = ListQuestionVC;
+			sourceTree = "<group>";
+		};
+		CEC48C0020D4D30500404469 /* QRCodeScannerVC */ = {
+			isa = PBXGroup;
+			children = (
+				CEC48C0120D4D31C00404469 /* QRCodeScannerViewController.swift */,
+				CEC48C0220D4D31C00404469 /* QRCodeScannerViewController.xib */,
+			);
+			path = QRCodeScannerVC;
+			sourceTree = "<group>";
+		};
+		CECB684420D2F5F8009623B3 /* StudentListVC */ = {
+			isa = PBXGroup;
+			children = (
+				CECB684520D2F615009623B3 /* StudentListViewController.swift */,
+				CECB684620D2F615009623B3 /* StudentListViewController.xib */,
+			);
+			path = StudentListVC;
+			sourceTree = "<group>";
+		};
+		CECCDFF520A9819700B4B4E7 /* ListLessonVC */ = {
+			isa = PBXGroup;
+			children = (
+				CECCDFFA20A982D200B4B4E7 /* Cell */,
+				CECCDFF620A981AD00B4B4E7 /* LessonViewController.swift */,
+				CECCDFF720A981AD00B4B4E7 /* LessonViewController.xib */,
+			);
+			path = ListLessonVC;
+			sourceTree = "<group>";
+		};
+		CECCDFFA20A982D200B4B4E7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CECCDFFB20A9830900B4B4E7 /* LessonTableViewCell.swift */,
+				CECCDFFC20A9830900B4B4E7 /* LessonTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CEEAA0E520A157FB00C92F1B /* QuestionResultVC */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAA0E620A1582800C92F1B /* QuestionResultViewController.swift */,
+				CEEAA0E720A1582800C92F1B /* QuestionResultViewController.xib */,
+			);
+			path = QuestionResultVC;
+			sourceTree = "<group>";
+		};
+		D732BDA8214A9F71F5D3763D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B621B42B1BF1B9C4C8C3753F /* Pods-DecentralizedVotingApplication.debug.xcconfig */,
+				16B549A6E81BBFFE25928F81 /* Pods-DecentralizedVotingApplication.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F140802120DF4709007CED5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F140802220DF471C007CED5F /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1AFAF9A20DF57D500BB908F /* UserInformationVC */ = {
+			isa = PBXGroup;
+			children = (
+				F1AFAF9B20DF581400BB908F /* UserInformationVC.swift */,
+				F1AFAF9C20DF581400BB908F /* UserInformationVC.xib */,
+			);
+			path = UserInformationVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE28D2A52030D08200840B32 /* DecentralizedVotingApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE28D2D12030D08200840B32 /* Build configuration list for PBXNativeTarget "DecentralizedVotingApplication" */;
+			buildPhases = (
+				AD07A0451D8D89E97E0DCC39 /* [CP] Check Pods Manifest.lock */,
+				CE28D2A22030D08200840B32 /* Sources */,
+				CE28D2A32030D08200840B32 /* Frameworks */,
+				CE28D2A42030D08200840B32 /* Resources */,
+				CEE5A3592080B73500236081 /* Embed Frameworks */,
+				73F93077E060D3D5CEB9DEC1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DecentralizedVotingApplication;
+			productName = DecentralizedVotingApplication;
+			productReference = CE28D2A62030D08200840B32 /* DecentralizedVotingApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE28D29E2030D08200840B32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Hoang Quan Tran";
+				TargetAttributes = {
+					CE28D2A52030D08200840B32 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6WFF3M8VQS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CE28D2A12030D08200840B32 /* Build configuration list for PBXProject "DecentralizedVotingApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE28D29D2030D08200840B32;
+			productRefGroup = CE28D2A72030D08200840B32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE28D2A52030D08200840B32 /* DecentralizedVotingApplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE28D2A42030D08200840B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE28D2B72030D08200840B32 /* LaunchScreen.storyboard in Resources */,
+				CE39AF7B20592A34007CE5CC /* RegisterViewController.xib in Resources */,
+				F1AFAF9E20DF581400BB908F /* UserInformationVC.xib in Resources */,
+				CEEAA0E920A1582800C92F1B /* QuestionResultViewController.xib in Resources */,
+				CECCDFF920A981AD00B4B4E7 /* LessonViewController.xib in Resources */,
+				CEC48BFE20D4D2E600404469 /* ListQuestionViewController.xib in Resources */,
+				CE95575620DA04E1001C7C40 /* QRLoginViewController.xib in Resources */,
+				CE4FAF3F207DBCF800DFE8EB /* QuestionViewController.xib in Resources */,
+				CEC48C0420D4D31C00404469 /* QRCodeScannerViewController.xib in Resources */,
+				CE28D2B42030D08200840B32 /* Assets.xcassets in Resources */,
+				CE9DB1EE20A2EFFD00C12040 /* QRCodeViewController.xib in Resources */,
+				CE343629203C19230010C122 /* LoginVC.xib in Resources */,
+				CE4FAF3A207DB8CC00DFE8EB /* ClassTableViewCell.xib in Resources */,
+				CECB684820D2F615009623B3 /* StudentListViewController.xib in Resources */,
+				CECCDFFE20A9830900B4B4E7 /* LessonTableViewCell.xib in Resources */,
+				CE28D2AF2030D08200840B32 /* Main.storyboard in Resources */,
+				CE49A733207CD15E0070773A /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73F93077E060D3D5CEB9DEC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DecentralizedVotingApplication/Pods-DecentralizedVotingApplication-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-Synchronous/Alamofire_Synchronous.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyRSA/SwiftyRSA.framework",
+				"${BUILT_PRODUCTS_DIR}/libsodium/libsodium.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1_ios/secp256k1_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_Synchronous.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRSA.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libsodium.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DecentralizedVotingApplication/Pods-DecentralizedVotingApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD07A0451D8D89E97E0DCC39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DecentralizedVotingApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE28D2A22030D08200840B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE95575520DA04E1001C7C40 /* QRLoginViewController.swift in Sources */,
+				CE28D2AC2030D08200840B32 /* ViewController.swift in Sources */,
+				CE28D2AA2030D08200840B32 /* AppDelegate.swift in Sources */,
+				CE343628203C19230010C122 /* LoginVC.swift in Sources */,
+				CE39AF7A20592A34007CE5CC /* RegisterViewController.swift in Sources */,
+				CEAB78222089C9AD007CBFB2 /* APIURL.swift in Sources */,
+				CEBFA5E3209B05160003A4E8 /* Utils.swift in Sources */,
+				F1AFAF9D20DF581400BB908F /* UserInformationVC.swift in Sources */,
+				CEC48BFF20D4D2E600404469 /* ListQuestionViewController.swift in Sources */,
+				CEC48C0320D4D31C00404469 /* QRCodeScannerViewController.swift in Sources */,
+				CE4FAF39207DB8CC00DFE8EB /* ClassTableViewCell.swift in Sources */,
+				F140802320DF471C007CED5F /* User.swift in Sources */,
+				CE28D2B22030D08200840B32 /* DecentralizedVotingApplication.xcdatamodeld in Sources */,
+				CECCDFF820A981AD00B4B4E7 /* LessonViewController.swift in Sources */,
+				CE9DB1ED20A2EFFD00C12040 /* QRCodeViewController.swift in Sources */,
+				CECB684720D2F615009623B3 /* StudentListViewController.swift in Sources */,
+				CEAB78202089C70B007CBFB2 /* BaseAPI.swift in Sources */,
+				CEC48C0620D4E1D300404469 /* ExtensionUIView.swift in Sources */,
+				CE49A732207CD15E0070773A /* HomeViewController.swift in Sources */,
+				CEB326542030D26C000AE478 /* Constants.swift in Sources */,
+				CE4FAF3E207DBCF800DFE8EB /* QuestionViewController.swift in Sources */,
+				CEEAA0E820A1582800C92F1B /* QuestionResultViewController.swift in Sources */,
+				CECCDFFD20A9830900B4B4E7 /* LessonTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE28D2AD2030D08200840B32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE28D2AE2030D08200840B32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE28D2B52030D08200840B32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE28D2B62030D08200840B32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE28D2CF2030D08200840B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = DecentralizedVotingApplication/CheckBoxHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE28D2D02030D08200840B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = DecentralizedVotingApplication/CheckBoxHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE28D2D22030D08200840B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B621B42B1BF1B9C4C8C3753F /* Pods-DecentralizedVotingApplication.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6WFF3M8VQS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DecentralizedVotingApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = trnhgquan.DecentralizedVotingApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		CE28D2D32030D08200840B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16B549A6E81BBFFE25928F81 /* Pods-DecentralizedVotingApplication.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6WFF3M8VQS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DecentralizedVotingApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = trnhgquan.DecentralizedVotingApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE28D2A12030D08200840B32 /* Build configuration list for PBXProject "DecentralizedVotingApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE28D2CF2030D08200840B32 /* Debug */,
+				CE28D2D02030D08200840B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE28D2D12030D08200840B32 /* Build configuration list for PBXNativeTarget "DecentralizedVotingApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE28D2D22030D08200840B32 /* Debug */,
+				CE28D2D32030D08200840B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE28D2B02030D08200840B32 /* DecentralizedVotingApplication.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE28D2B12030D08200840B32 /* DecentralizedVotingApplication.xcdatamodel */,
+			);
+			currentVersion = CE28D2B12030D08200840B32 /* DecentralizedVotingApplication.xcdatamodel */;
+			path = DecentralizedVotingApplication.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE28D29E2030D08200840B32 /* Project object */;
+}

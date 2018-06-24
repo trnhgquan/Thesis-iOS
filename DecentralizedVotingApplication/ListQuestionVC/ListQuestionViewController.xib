@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListQuestionViewController" customModule="DecentralizedVotingApplication" customModuleProvider="target">
+            <connections>
+                <outlet property="listQCTableView" destination="bbt-Xa-Oyn" id="yV5-kN-aRp"/>
+                <outlet property="scanBtn" destination="SUt-ZJ-0lo" id="XCI-Uc-1Uu"/>
+                <outlet property="studentListBtn" destination="yQT-yh-JY5" id="fbg-qq-E6J"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bbt-Xa-Oyn">
+                    <rect key="frame" x="10" y="120" width="355" height="537"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUt-ZJ-0lo">
+                    <rect key="frame" x="10" y="30" width="355" height="30"/>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="QSW-C2-dBz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <state key="normal" title="Scan">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="scanAction:" destination="-1" eventType="touchUpInside" id="2Qa-8F-EvW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQT-yh-JY5">
+                    <rect key="frame" x="10" y="70" width="355" height="30"/>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="tPM-wZ-5fP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <state key="normal" title="Student List">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="studentListAction:" destination="-1" eventType="touchUpInside" id="Xjr-Od-QCk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yQT-yh-JY5" secondAttribute="trailing" constant="10" id="0qJ-QH-duh"/>
+                <constraint firstItem="SUt-ZJ-0lo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="AwB-rE-cCw"/>
+                <constraint firstItem="bbt-Xa-Oyn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="KFz-oT-BY8"/>
+                <constraint firstItem="SUt-ZJ-0lo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="W5E-dp-6R5"/>
+                <constraint firstItem="yQT-yh-JY5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="d1w-gb-yCF"/>
+                <constraint firstItem="yQT-yh-JY5" firstAttribute="top" secondItem="SUt-ZJ-0lo" secondAttribute="bottom" constant="10" id="eYz-dx-bTi"/>
+                <constraint firstItem="bbt-Xa-Oyn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="o5a-4d-sfV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bbt-Xa-Oyn" secondAttribute="bottom" constant="10" id="s4C-ui-Feg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SUt-ZJ-0lo" secondAttribute="trailing" constant="10" id="uRj-4T-M5U"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bbt-Xa-Oyn" secondAttribute="trailing" constant="10" id="vvY-3L-TNx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="200" y="19"/>
+        </view>
+    </objects>
+</document>

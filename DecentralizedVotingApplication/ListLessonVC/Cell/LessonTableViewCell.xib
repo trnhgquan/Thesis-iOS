@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonCell" rowHeight="95" id="KGk-i7-Jjw" customClass="LessonTableViewCell" customModule="DecentralizedVotingApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lesson Transaction" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfk-IJ-EcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="395" height="64.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STU-nm-MJB">
+                        <rect key="frame" x="0.0" y="74.5" width="395" height="20.5"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="fqe-6b-ohI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wfk-IJ-EcQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0Qp-eU-X1V"/>
+                    <constraint firstAttribute="trailing" secondItem="STU-nm-MJB" secondAttribute="trailing" id="VLj-Me-MQe"/>
+                    <constraint firstAttribute="bottom" secondItem="STU-nm-MJB" secondAttribute="bottom" id="Yio-UP-B42"/>
+                    <constraint firstItem="STU-nm-MJB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="anh-68-xAs"/>
+                    <constraint firstItem="Wfk-IJ-EcQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="njn-Le-E2c"/>
+                    <constraint firstAttribute="trailing" secondItem="Wfk-IJ-EcQ" secondAttribute="trailing" id="ppm-0k-nIX"/>
+                    <constraint firstItem="STU-nm-MJB" firstAttribute="top" secondItem="Wfk-IJ-EcQ" secondAttribute="bottom" constant="10" id="vDd-7E-Fxy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lessonNameLabel" destination="Wfk-IJ-EcQ" id="uN0-uo-TvR"/>
+            </connections>
+            <point key="canvasLocation" x="71.5" y="139.5"/>
+        </tableViewCell>
+    </objects>
+</document>

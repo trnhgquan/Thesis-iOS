@@ -1,0 +1,6 @@
+framework module Pods_DecentralizedVotingApplication {
+  umbrella header "Pods-DecentralizedVotingApplication-umbrella.h"
+
+  export *
+  module * { export * }
+}
